@@ -1,0 +1,43 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#video {
+  display: none;
+}
+
+#cursor, #cursor2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  z-index: 10;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+#cursor2 {
+  background: blue;
+}
+
+#click-target {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  padding: 20px;
+  background: orange;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  z-index: 5;
+}
